@@ -3,195 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mercado Frescor & Cia</title>
-  <meta name="description" content="Sua feira fresca com entrega rápida, ofertas semanais e preços imbatíveis." />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              50: '#f1fdf4',
-              100: '#d7f7df',
-              500: '#22c55e',
-              600: '#16a34a',
-              700: '#15803d'
-            },
-            accent: {
-              500: '#f97316',
-              600: '#ea580c'
-            }
-          }
-        }
-      }
-    }
-  </script>
+  <title>Mercado Frescor & Cia | Início</title>
+  <meta name="description" content="Supermercado completo com seções de frutaria, padaria, açougue e ofertas diárias." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased">
-  <header class="bg-white/95 backdrop-blur border-b border-gray-100 sticky top-0 z-50">
-    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="h-16 flex items-center justify-between">
-        <a href="#" class="text-xl font-extrabold text-brand-700">Mercado <span class="text-brand-500">Frescor & Cia</span></a>
-
-        <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-          <a href="#ofertas" class="hover:text-brand-600 transition">Ofertas</a>
-          <a href="#beneficios" class="hover:text-brand-600 transition">Benefícios</a>
-          <a href="#contato" class="hover:text-brand-600 transition">Contato</a>
-        </div>
-
-        <div class="hidden md:block">
-          <a href="#" class="inline-flex items-center rounded-xl bg-accent-500 hover:bg-accent-600 px-5 py-2.5 text-white font-semibold shadow-sm transition">Fazer Pedido</a>
-        </div>
-
-        <button id="menu-btn" class="md:hidden p-2 rounded-lg border border-gray-200" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-      </div>
-
-      <div id="mobile-menu" class="md:hidden hidden pb-4">
-        <div class="flex flex-col gap-3 text-sm font-medium">
-          <a href="#ofertas" class="py-2 px-2 rounded-lg hover:bg-brand-50">Ofertas</a>
-          <a href="#beneficios" class="py-2 px-2 rounded-lg hover:bg-brand-50">Benefícios</a>
-          <a href="#contato" class="py-2 px-2 rounded-lg hover:bg-brand-50">Contato</a>
-          <a href="#" class="mt-1 inline-flex justify-center rounded-xl bg-accent-500 hover:bg-accent-600 px-4 py-2.5 text-white font-semibold">Fazer Pedido</a>
-        </div>
-      </div>
-    </nav>
+<body>
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Mercado <span>Frescor & Cia</span></a>
+      <nav class="nav-links" aria-label="Principal">
+        <a class="active" href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="servicos.html">Setores</a>
+        <a href="planos.html">Ofertas</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <a class="btn btn-primary nav-cta" href="planos.html">Ver Ofertas</a>
+      <button class="menu-btn" data-menu-btn aria-expanded="false" aria-label="Abrir menu">☰</button>
+    </div>
+    <div class="container mobile-menu" data-mobile-menu>
+      <a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="servicos.html">Setores</a><a href="planos.html">Ofertas</a><a href="contato.html">Contato</a>
+    </div>
   </header>
 
-  <main>
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
-      <div class="grid md:grid-cols-2 gap-8 items-center">
-        <div>
-          <span class="inline-flex items-center rounded-full bg-brand-100 text-brand-700 text-xs font-semibold px-3 py-1 mb-4">Entrega expressa na sua região</span>
-          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight text-gray-900">Sua feira fresca, entregue na sua porta em minutos.</h1>
-          <p class="mt-4 text-gray-600 text-base sm:text-lg">Frutas, legumes e itens essenciais selecionados diariamente. Qualidade premium, preços justos e frete rápido para você economizar tempo.</p>
-          <a href="#ofertas" class="mt-6 inline-flex rounded-2xl bg-accent-500 hover:bg-accent-600 px-7 py-3.5 text-white text-base font-bold shadow-md transition">Quero Aproveitar as Ofertas</a>
+  <main class="container">
+    <section class="hero reveal">
+      <div>
+        <span class="pill">Supermercado completo no seu bairro</span>
+        <h1>Frutas frescas, pão quentinho e carnes selecionadas todos os dias.</h1>
+        <p>Um site moderno para apresentar tudo que seu supermercado oferece: frutaria, padaria, açougue, mercearia e ofertas especiais com navegação rápida e elegante.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="planos.html">Ofertas da Semana</a>
+          <a class="btn btn-secondary" href="servicos.html">Ver Setores</a>
         </div>
-        <div class="relative">
-          <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80" alt="Sacola com frutas e vegetais frescos" class="w-full h-72 sm:h-96 object-cover rounded-3xl shadow-lg" />
-          <div class="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-lg p-4 border border-gray-100">
-            <p class="text-sm text-gray-500">Clientes satisfeitos</p>
-            <p class="text-xl font-bold text-brand-700">+12.000 pedidos/mês</p>
-          </div>
-        </div>
+      </div>
+      <div class="image-card">
+        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1400&q=80" alt="Corredor de supermercado com frutas e verduras" />
+        <div class="image-badge">Reposição fresca todos os dias</div>
       </div>
     </section>
 
-    <section id="ofertas" class="bg-white py-12 sm:py-16 border-y border-gray-100">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-8">
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900">Ofertas da Semana</h2>
-          <p class="mt-2 text-gray-600">Produtos fresquinhos com preços que cabem no seu bolso.</p>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <article class="rounded-2xl border border-gray-100 bg-white shadow-sm overflow-hidden">
-            <img src="https://placehold.co/600x400/DCFCE7/166534?text=Morango" alt="Morango" class="w-full h-44 object-cover" />
-            <div class="p-4">
-              <h3 class="font-semibold text-lg">Morango 500g</h3>
-              <p class="text-sm text-gray-500 line-through">R$ 15,90</p>
-              <p class="text-2xl font-extrabold text-red-600">R$ 9,90</p>
-              <button class="mt-3 w-full rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold py-2.5">Adicionar</button>
-            </div>
-          </article>
-
-          <article class="rounded-2xl border border-gray-100 bg-white shadow-sm overflow-hidden">
-            <img src="https://placehold.co/600x400/FEF3C7/92400E?text=Banana" alt="Banana" class="w-full h-44 object-cover" />
-            <div class="p-4">
-              <h3 class="font-semibold text-lg">Banana Prata 1kg</h3>
-              <p class="text-sm text-gray-500 line-through">R$ 8,90</p>
-              <p class="text-2xl font-extrabold text-red-600">R$ 5,99</p>
-              <button class="mt-3 w-full rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold py-2.5">Adicionar</button>
-            </div>
-          </article>
-
-          <article class="rounded-2xl border border-gray-100 bg-white shadow-sm overflow-hidden">
-            <img src="https://placehold.co/600x400/DBEAFE/1E3A8A?text=Tomate" alt="Tomate" class="w-full h-44 object-cover" />
-            <div class="p-4">
-              <h3 class="font-semibold text-lg">Tomate Italiano 1kg</h3>
-              <p class="text-sm text-gray-500 line-through">R$ 12,50</p>
-              <p class="text-2xl font-extrabold text-red-600">R$ 7,49</p>
-              <button class="mt-3 w-full rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold py-2.5">Adicionar</button>
-            </div>
-          </article>
-
-          <article class="rounded-2xl border border-gray-100 bg-white shadow-sm overflow-hidden">
-            <img src="https://placehold.co/600x400/FEE2E2/991B1B?text=Alface" alt="Alface" class="w-full h-44 object-cover" />
-            <div class="p-4">
-              <h3 class="font-semibold text-lg">Alface Crespa</h3>
-              <p class="text-sm text-gray-500 line-through">R$ 4,90</p>
-              <p class="text-2xl font-extrabold text-red-600">R$ 2,99</p>
-              <button class="mt-3 w-full rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold py-2.5">Adicionar</button>
-            </div>
-          </article>
-        </div>
+    <section class="reveal">
+      <div class="section-head">
+        <h2>Destaques do supermercado</h2>
+        <p>Páginas conectadas para o cliente encontrar rapidamente o que precisa.</p>
+      </div>
+      <div class="grid grid-4">
+        <article class="card"><img src="https://images.unsplash.com/photo-1615486363979-89e4d1966e7b?auto=format&fit=crop&w=900&q=80" alt="Frutas na frutaria" /><h3>Frutaria</h3><p>Frutas, legumes e verduras fresquinhos direto dos produtores.</p></article>
+        <article class="card"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80" alt="Padaria com pães" /><h3>Padaria</h3><p>Pães artesanais, bolos e salgados saindo do forno.</p></article>
+        <article class="card"><img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=900&q=80" alt="Cortes de carne no açougue" /><h3>Açougue</h3><p>Cortes bovinos, suínos e aves com padrão de qualidade.</p></article>
+        <article class="card"><img src="https://images.unsplash.com/photo-1586201375761-83865001e31b?auto=format&fit=crop&w=900&q=80" alt="Prateleiras de mercearia" /><h3>Mercearia</h3><p>Itens essenciais para a despensa com preços competitivos.</p></article>
       </div>
     </section>
 
-    <section id="beneficios" class="py-12 sm:py-16">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-8">
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900">Por que comprar conosco?</h2>
-          <p class="mt-2 text-gray-600">Experiência pensada para facilitar sua rotina.</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <article class="rounded-2xl bg-white border border-gray-100 p-6 shadow-sm">
-            <div class="text-3xl mb-3">🚚</div>
-            <h3 class="font-bold text-lg">Entrega Rápida</h3>
-            <p class="text-gray-600 mt-2">Pedidos entregues em até 30 minutos em áreas selecionadas.</p>
-          </article>
-
-          <article class="rounded-2xl bg-white border border-gray-100 p-6 shadow-sm">
-            <div class="text-3xl mb-3">🥬</div>
-            <h3 class="font-bold text-lg">Produtos Selecionados</h3>
-            <p class="text-gray-600 mt-2">Controle rigoroso de qualidade para levar frescor de verdade até você.</p>
-          </article>
-
-          <article class="rounded-2xl bg-white border border-gray-100 p-6 shadow-sm">
-            <div class="text-3xl mb-3">💸</div>
-            <h3 class="font-bold text-lg">Preços Imbatíveis</h3>
-            <p class="text-gray-600 mt-2">Promoções diárias e combos exclusivos para economizar mais.</p>
-          </article>
-        </div>
-      </div>
+    <section class="cta reveal">
+      <h2>Seu mercado de confiança, com experiência digital moderna</h2>
+      <p>Site responsivo, animado e elegante para facilitar a vida do cliente na hora de escolher produtos e acompanhar promoções.</p>
+      <div><a class="btn btn-primary" href="contato.html">Fale com a loja</a></div>
     </section>
   </main>
 
-  <footer id="contato" class="bg-brand-700 text-white py-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div>
-        <h3 class="font-bold text-lg">Mercado Frescor & Cia</h3>
-        <p class="text-brand-100 mt-2">Rua das Hortaliças, 123 - Centro, São Paulo - SP</p>
-      </div>
-      <div>
-        <h4 class="font-semibold">Contato</h4>
-        <p class="text-brand-100 mt-2">(11) 4002-8922</p>
-        <p class="text-brand-100">contato@mercadofrescoria.com</p>
-      </div>
-      <div>
-        <h4 class="font-semibold">Funcionamento</h4>
-        <p class="text-brand-100 mt-2">Seg a Sáb: 07h às 22h</p>
-        <p class="text-brand-100">Domingos e feriados: 08h às 18h</p>
-      </div>
+  <footer>
+    <div class="container footer-grid">
+      <div><strong>Mercado Frescor & Cia</strong><p>Rua das Hortaliças, 123 - Centro</p></div>
+      <div><strong>Navegação</strong><p><a href="servicos.html">Setores</a> · <a href="planos.html">Ofertas</a> · <a href="contato.html">Contato</a></p></div>
+      <div><strong>Atendimento</strong><p>contato@mercadofrescor.com<br/>(11) 4002-8922</p></div>
     </div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-6 border-t border-brand-600 text-brand-100 text-sm">
-      © 2026 Mercado Frescor & Cia. Todos os direitos reservados.
-    </div>
+    <div class="container footer-note">© 2026 Mercado Frescor & Cia — qualidade e frescor na sua mesa.</div>
   </footer>
-
-  <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    menuBtn.addEventListener('click', () => {
-      const isHidden = mobileMenu.classList.toggle('hidden');
-      menuBtn.setAttribute('aria-expanded', String(!isHidden));
-    });
-  </script>
+  <script src="app.js"></script>
 </body>
 </html>
