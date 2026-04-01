@@ -1,22 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mercado Frescor & Cia | Sobre</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="single-screen">
   <div class="bg-scene" aria-hidden="true">
     <span class="bg-orb one"></span><span class="bg-orb two"></span><span class="bg-orb three"></span><span class="bg-grid"></span>
   </div>
-<header class="topbar"><div class="container nav-wrap"><a class="brand" href="index.html">Mercado <span>Frescor & Cia</span></a><nav class="nav-links"><a href="index.html">Início</a><a class="active" href="sobre.html">Sobre</a><a href="servicos.html">Setores</a><a href="planos.html">Ofertas</a><a href="contato.html">Contato</a></nav><a class="btn btn-primary nav-cta" href="contato.html">Localização</a><button class="menu-btn" data-menu-btn aria-expanded="false">☰</button></div><div class="container mobile-menu" data-mobile-menu><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="servicos.html">Setores</a><a href="planos.html">Ofertas</a><a href="contato.html">Contato</a></div></header>
-<main class="container">
-<section class="hero reveal"><div><span class="pill">Nossa história</span><h1>Um supermercado de bairro com carinho no atendimento e qualidade em cada setor.</h1><p>Atendemos famílias diariamente com produtos frescos, reposição constante e equipe especializada em frutaria, padaria e açougue.</p></div><div class="image-card"><img src="https://images.unsplash.com/photo-1579113800032-c38bd7635818?auto=format&fit=crop&w=1400&q=80" alt="Carrinho em supermercado" /><div class="image-badge">Tradição e confiança para sua casa</div></div></section>
-<section class="reveal"><div class="section-head"><h2>Compromissos da nossa loja</h2></div><div class="grid grid-3"><article class="card"><h3>Frescor diário</h3><p>Seleção de hortifruti e panificados produzidos e repostos todos os dias.</p></article><article class="card"><h3>Qualidade garantida</h3><p>Controle rigoroso em perecíveis para levar o melhor à sua mesa.</p></article><article class="card"><h3>Preço justo</h3><p>Promoções semanais e ofertas especiais para economizar com qualidade.</p></article></div></section>
-</main>
-<footer><div class="container footer-note">Visite também <a href="servicos.html">setores</a> e <a href="planos.html">ofertas</a>.</div></footer>
-<script src="app.js"></script>
+
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Mercado <span>Frescor & Cia</span></a>
+      <nav class="nav-links">
+        <a href="index.html">Início</a>
+        <a class="active" href="sobre.html">Sobre</a>
+        <a href="servicos.html">Setores</a>
+        <a href="planos.html">Ofertas</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <a class="btn btn-primary nav-cta" href="contato.html">Localização</a>
+      <button class="menu-btn" data-menu-btn aria-expanded="false">☰</button>
+    </div>
+    <div class="container mobile-menu" data-mobile-menu>
+      <a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="servicos.html">Setores</a><a href="planos.html">Ofertas</a><a href="contato.html">Contato</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="about-layout reveal">
+      <div>
+        <span class="pill">Nossa história</span>
+        <h1>Uma trajetória de bairro, com qualidade e atendimento humano.</h1>
+      </div>
+
+      <div class="carousel" data-carousel>
+        <div class="carousel-track">
+          <figure class="carousel-slide">
+            <img src="https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Entrada do supermercado" />
+            <figcaption class="carousel-caption">Começamos como mercearia local em 2008 e crescemos junto com a vizinhança.</figcaption>
+          </figure>
+          <figure class="carousel-slide">
+            <img src="https://images.pexels.com/photos/225228/pexels-photo-225228.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Corredor de supermercado bem organizado" />
+            <figcaption class="carousel-caption">Hoje oferecemos mix completo com reposição diária e organização por setores.</figcaption>
+          </figure>
+          <figure class="carousel-slide">
+            <img src="https://images.pexels.com/photos/4110459/pexels-photo-4110459.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Equipe atendendo clientes no supermercado" />
+            <figcaption class="carousel-caption">Nosso foco é manter preços justos sem abrir mão da experiência de compra.</figcaption>
+          </figure>
+        </div>
+        <button class="carousel-btn prev" type="button" data-carousel-prev aria-label="Imagem anterior">❮</button>
+        <button class="carousel-btn next" type="button" data-carousel-next aria-label="Próxima imagem">❯</button>
+        <div class="carousel-dots" data-carousel-dots></div>
+      </div>
+
+      <article class="card story-card">
+        <h3>História do Mercado Frescor & Cia</h3>
+        <p>Fundado em <strong>2008</strong>, o Mercado Frescor & Cia nasceu com a missão de unir conveniência e confiança em um só lugar. Com o tempo, ampliamos frutaria, padaria e açougue, sempre ouvindo os clientes do bairro.</p>
+        <p>Atualmente, combinamos loja física acolhedora com comunicação digital rápida para divulgar ofertas, horários e disponibilidade dos principais produtos, mantendo uma experiência simples e eficiente para toda a família.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-note">Visite também <a href="servicos.html">setores</a> e <a href="planos.html">ofertas</a>.</div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
