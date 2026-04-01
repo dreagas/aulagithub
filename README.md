@@ -1,49 +1,37 @@
-# Frescor & Cia — Site institucional multi-páginas
+# Mercado Frescor & Cia — Site institucional de supermercado
 
-Este projeto agora possui uma estrutura completa de páginas de negócio conectadas entre si, com foco em visual moderno, responsividade e animações suaves.
+O projeto foi remodelado para representar claramente um **supermercado** (e não uma empresa de serviços), com foco em setores reais da loja e ofertas para consumidores.
 
-## Páginas criadas
+## Páginas do site
 
-- `index.html` — Página inicial com proposta de valor, destaque visual e CTA principal.
-- `sobre.html` — História da empresa, posicionamento e valores.
-- `servicos.html` — Soluções oferecidas para crescimento do negócio.
-- `planos.html` — Planos de contratação (Essencial, Profissional, Elite).
-- `contato.html` — Canal de contato e convite para diagnóstico gratuito.
+- `index.html` — Home com destaque para experiência do mercado e principais categorias.
+- `sobre.html` — História da loja, compromissos e proposta de valor.
+- `servicos.html` — Página de setores (frutaria, padaria e açougue).
+- `planos.html` — Página de ofertas da semana com produtos e preços promocionais.
+- `contato.html` — Canais de contato para dúvidas e encomendas.
 
-## Como o site funciona
+## Estrutura e comportamento
 
-- Todas as páginas compartilham:
-  - **Navegação conectada** no topo (desktop + menu mobile).
-  - **Identidade visual consistente** via `styles.css`.
-  - **Animações de entrada** em seções com classe `.reveal` controladas por `app.js`.
-- O menu mobile é acionado por botão hambúrguer e funciona em telas menores.
-- O layout é responsivo com breakpoints para desktop, tablet e smartphone.
-- As imagens são carregadas por URLs aleatórias/externas (Unsplash), evitando pasta local de assets neste momento.
+- Navegação integrada entre todas as páginas (desktop e mobile).
+- Estilo visual único em `styles.css` para manter consistência e elegância.
+- Animações de entrada por seção usando `.reveal` em conjunto com `app.js`.
+- Menu mobile com botão hambúrguer para telas menores.
+- Imagens externas temáticas de supermercado/produtos (frutas, padaria, açougue, mercearia), sem pasta local de assets.
 
-## Tecnologias usadas
+## Tecnologias
 
 - HTML5
-- CSS3 (custom, com gradientes, microinterações e transições)
-- JavaScript vanilla (menu mobile + IntersectionObserver para animações)
+- CSS3
+- JavaScript Vanilla
 
-## Rodando localmente
+## Executar localmente
 
-Como o projeto é estático, basta abrir `index.html` no navegador.
-
-Se preferir usar um servidor local simples:
+Abra `index.html` diretamente no navegador ou rode um servidor estático:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Depois acesse:
+Acesse:
 
 - `http://localhost:8000/index.html`
-
-## Experiência visual implementada
-
-- Estilo moderno com efeito glassmorphism suave no topo.
-- Cartões com hover animado.
-- Botões com gradientes e elevação.
-- Transições suaves para navegação e estados interativos.
-- Estrutura elegante com foco em clareza, conversão e apresentação premium.
