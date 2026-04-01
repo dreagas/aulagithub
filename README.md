@@ -1,37 +1,46 @@
-# Mercado Frescor & Cia — Site institucional de supermercado
+# Mercado Frescor & Cia
 
-O projeto foi remodelado para representar claramente um **supermercado** (e não uma empresa de serviços), com foco em setores reais da loja e ofertas para consumidores.
+Site estático institucional para supermercado, com foco em apresentação de setores (frutaria, padaria, açougue e mercearia), ofertas e canais de contato.
 
-## Páginas do site
+## Stack tecnológica
 
-- `index.html` — Home com destaque para experiência do mercado e principais categorias.
-- `sobre.html` — História da loja, compromissos e proposta de valor.
-- `servicos.html` — Página de setores (frutaria, padaria e açougue).
-- `planos.html` — Página de ofertas da semana com produtos e preços promocionais.
-- `contato.html` — Canais de contato para dúvidas e encomendas.
+- **HTML5 semântico** para estrutura de conteúdo por página.
+- **CSS3 modular (`styles.css`)** com:
+  - design system via custom properties (`:root`),
+  - layout responsivo com CSS Grid,
+  - componentes reutilizáveis (`.card`, `.btn`, `.hero`, `.cta`),
+  - microinterações e animações (`hover`, `pulse`, `shine`, `zoomSlow`),
+  - cena de fundo animada (`.bg-scene`, `.bg-orb`, `.bg-grid`).
+- **JavaScript Vanilla (`app.js`)** com:
+  - toggle do menu mobile,
+  - animação de entrada por viewport com `IntersectionObserver`,
+  - efeito de parallax leve nos elementos de fundo com `mousemove`.
 
-## Estrutura e comportamento
+## Estrutura do projeto
 
-- Navegação integrada entre todas as páginas (desktop e mobile).
-- Estilo visual único em `styles.css` para manter consistência e elegância.
-- Animações de entrada por seção usando `.reveal` em conjunto com `app.js`.
-- Menu mobile com botão hambúrguer para telas menores.
-- Imagens externas temáticas de supermercado/produtos (frutas, padaria, açougue, mercearia), sem pasta local de assets.
+```text
+.
+├── index.html      # Página inicial e destaques do supermercado
+├── sobre.html      # História da loja e compromissos
+├── servicos.html   # Setores da loja
+├── planos.html     # Ofertas da semana
+├── contato.html    # Canais de atendimento
+├── styles.css      # Estilos globais, responsividade e animações
+├── app.js          # Interações e comportamentos visuais
+└── README.md
+```
 
-## Tecnologias
+## Arquitetura de interface
 
-- HTML5
-- CSS3
-- JavaScript Vanilla
+- **Navegação global unificada** em todas as páginas (desktop + mobile).
+- **Composição visual consistente** baseada em componentes compartilhados.
+- **Imagens externas temáticas** (supermercado e produtos) para acelerar prototipação sem pipeline de assets local.
+- **Experiência responsiva** com breakpoints principais em `960px` e `700px`.
 
 ## Executar localmente
-
-Abra `index.html` diretamente no navegador ou rode um servidor estático:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Acesse:
-
-- `http://localhost:8000/index.html`
+Acesse em: `http://localhost:8000/index.html`.
